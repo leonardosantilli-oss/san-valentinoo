@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>San valentinoo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+            background-image: url("https://www.transparenttextures.com/patterns/hearts.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .contenitore {
+            background-color: #fff0f5;
+            border-radius: 20px;
+            padding: 30px;
+            width: 380px;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+            text-align: center;
+        }
+
+        h1 {
+            color: #d6336c;
+        }
+
+        h2 {
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #b03060;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ff99aa;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .valentine-box {
+            margin: 30px 0;
+        }
+
+        /* intestazione più grande */
+        .valentine-box p {
+            font-weight: bold;
+            color: #b03060;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .pulsanti-valentine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-si {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 22px;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.5);
+        }
+
+        .btn-si:hover {
+            transform: scale(1.05);
+            background-color: #e63950;
+        }
+
+        .btn-no {
+            background-color: #c0c0c0;
+            color: #444;
+            border: none;
+            padding: 6px 10px;
+            font-size: 11px;
+            border-radius: 15px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .btn-no:hover {
+            opacity: 1;
+        }
+
+        .checkbox {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #800020;
+            text-align: left;
+        }
+
+        .bottoni-form {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .invia {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .pulisci {
+            background-color: #c0c0c0;
+            color: #333;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cuore {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenitore">
+    <h1>San valentinoo 💕</h1>
+    <h2>14 Febbraio??</h2>
+
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Scrivi il tuo nome..." required>
+
+        <div class="valentine-box">
+            <p>Will you be my valentine?</p>
+            <div class="pulsanti-valentine">
+                <button type="button" class="btn-si">SI</button>
+                <button type="button" class="btn-no">no..</button>
+            </div>
+        </div>
+
+        <label for="commenti">Commenti</label>
+        <textarea id="commenti" name="commenti" placeholder="Scrivi il tuo pensiero 💌"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">Accetto l’informativa sulla privacy</label>
+        </div>
+
+        <div class="bottoni-form">
+            <button type="submit" class="invia">Invia feedback</button>
+            <button type="reset" class="pulisci">Pulisci campi</button>
+        </div>
+
+        <div class="cuore">❤️ 💕 ❤️</div>
+    </form>
+</div>
+
+</body>
+</html>
+
+
